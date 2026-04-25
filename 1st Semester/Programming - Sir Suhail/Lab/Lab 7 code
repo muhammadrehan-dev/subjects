@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Variable declarations
+    int days;
+    char repeat;
+
+    // Loop so user can check multiple times
+    do {
+        // Taking input from user
+        cout << "Enter number of days left before exam: ";
+        cin >> days;
+
+        // Condition to judge exam preparation level
+        if (days > 10) {
+            cout << "Relax! Abhi time hai... (Jo waste hi hoga )" << endl;
+        }
+        else if (days >= 3 && days <= 10) {
+            cout << "Bhai time hai Parh lo." << endl;
+        }
+        else if (days > 0 && days < 3) {
+            cout << "Bro Abhi Time hai! Ho jaye ga paper." << endl;
+        }
+        else {
+            cout << "Exam ho chuka hai bhai... ab result ka wait karo " << endl;
+        }
+
+        // Ask user if they want to run again
+        cout << "\nDobara Check Krny Ka? (y/n): ";
+        cin >> repeat;
+
+    } while (repeat == 'y' || repeat == 'Y');
+
+    // Program ending message
+    cout << "Chill Kr Bhai" << endl;
+
+    return 0;
+}
+

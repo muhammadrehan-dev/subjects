@@ -1,0 +1,37 @@
+1. Problem Description
+
+The purpose of this program is to help students evaluate their exam preparation status based on the number of days remaining before an exam. Many students delay their preparation and only realize the seriousness close to the exam date. This program takes the number of days left as input and provides a motivational or warning message accordingly.
+
+The program uses basic C++ concepts such as user input, output, conditional statements, loops, variables, and operators. It allows the user to repeat the process multiple times until they choose to exit. The goal is to demonstrate decision-making logic in programming while keeping the program simple and easy to understand.
+
+2. Logic Flow
+
+The program starts execution from the main() function.
+
+Variables are declared to store:
+
+The number of days left before the exam.
+
+The user’s choice to repeat the program.
+
+A do-while loop is used so the program runs at least once and can repeat if the user wants.
+
+The program asks the user to enter the number of days left before the exam using cin.
+
+An if-else conditional structure checks the entered value:
+
+If days are greater than 10, the program indicates there is enough time.
+
+If days are between 3 and 10, the program warns the user to start serious preparation.
+
+If days are less than 3 but greater than 0, the program shows an emergency preparation message.
+
+If the entered value is zero or negative, the program assumes the exam has already passed.
+
+The program displays the appropriate message using cout.
+
+The user is asked whether they want to check again.
+
+If the user enters y or Y, the loop repeats; otherwise, the program ends.
+
+A final message is displayed before program termination.

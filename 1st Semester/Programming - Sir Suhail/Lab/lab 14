@@ -1,0 +1,61 @@
+#include <iostream>
+using namespace std;
+
+// Function to calculate average marks
+float calculateAverage(int marks[], int n)
+{
+    int sum = 0;
+    for (int i = 0; i < n; i++)
+    {
+        sum += marks[i];
+    }
+    return (float)sum / n;
+}
+
+// Function to find highest and lowest marks
+void findHighestLowest(int marks[], int n, int &highest, int &lowest)
+{
+    highest = marks[0];
+    lowest = marks[0];
+
+    for (int i = 1; i < n; i++)
+    {
+        if (marks[i] > highest)
+            highest = marks[i];
+
+        if (marks[i] < lowest)
+            lowest = marks[i];
+    }
+}
+
+int main()
+{
+    int n;
+
+    // Taking number of students
+    cout << "Enter number of students: ";
+    cin >> n;
+
+    int marks[n]; // 1D array to store marks
+
+    // Input marks
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Enter marks of student " << i + 1 << ": ";
+        cin >> marks[i];
+    }
+
+    // Function calls
+    float avg = calculateAverage(marks, n);
+
+    int highest, lowest;
+    findHighestLowest(marks, n, highest, lowest);
+
+    // Display results
+    cout << "\n--- Student Marks Analysis ---" << endl;
+    cout << "Average Marks: " << avg << endl;
+    cout << "Highest Marks: " << highest << endl;
+    cout << "Lowest Marks: " << lowest << endl;
+
+    return 0;
+}
