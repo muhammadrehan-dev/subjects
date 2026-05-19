@@ -1,0 +1,25 @@
+SOP expressions
+
+POS expressions
+
+K mapping
+
+Half Adder
+
+Full Adder
+
+Binary multiplier
+
+4 Bit Parallel Adder , Subtractor
+
+Magnitude Comparator
+
+Sequential Circuits
+
+Latches ( SR-Latches , D-Latches ) , Flip Flop
+
+Shift Register
+
+Counters
+
+Universal Gates
